@@ -14,11 +14,11 @@ public class JavaScriptExecutorDemo {
         driver.get("https://www.twoplugs.com/");
         driver.manage().window().maximize();
         WebElement joinfree = driver.findElement(By.xpath("//header/div[1]/ul[1]/li[2]/a[1]/span[1]"));
-//Flashing element
+        //Flashing element
         JavascriptUtil.flash(joinfree, driver);
-//Draw Border
+        //Draw Border
         JavascriptUtil.drawBorder(joinfree, driver);
-//Screenshots
+        //Screenshots
         File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         File trg = new File("C:\\Users\\win\\IdeaProjects\\JavaScriptExcecutor\\Screenshots\\Twoplug.png");
         try {
